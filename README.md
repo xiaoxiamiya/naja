@@ -15,34 +15,31 @@ pip install naja
 
 ```tex
 ├── naja                                        项目目录
-│    ├── abc_base                               项目抽象基类层
-│    │    ├── model                           	抽象模型层
-│    │    ├── service                           抽象服务层
-│    │    └── view                          	抽象视图层
-│    ├── apps                                   项目应用目录
-│    │    ├── example_app                       单一应用
-│    │ 	  │  	├── sql_logs                    该应用sql修改记录
-│    │ 	  │  	├── enum.py                     该应用枚举类常量
-│    │ 	  │  	├── model.py                    该应用模型文件
-│    │ 	  │ 	├── service.py                  该应用服务文件
-│    │    │  	└── view.py                     该应用视图文件	
-│    ├── utils                                  项目工具层目录
-│    │    ├── cache                           	缓存&redis工具集
-│    │    ├── common                        	通用工具集
-│    │    ├── database                          数据库工具集
-│    │    ├── enum                              枚举类工具集
-│    │    ├── event                          	事件类工具集
-│    │    ├── frame                          	fastapi框架工具集
-│    │    └── net                          	网络层工具集
-│    ├── conf                                   项目配置层目录
-│    │    ├── dynamic.conf                      本地动态配置文件
-│    │    ├── dynamic.dev.conf                  dev环境动态配置文件
-│    │    ├── dynamic.rel.conf                  生产环境动态配置文件
-│    │    ├── static.conf                       本地静态配置文件
-│    │    ├── static.dev.conf                   dev环境静态配置文件
-│    │    ├── static.rel.conf                   生产环境静态配置文件
-│    │    └── gunicorn.conf                     gunicorn配置文件
-│    ├── services                               项目独立/三方服务目录
-│    ├── main.py                                fastapi实例对象入口
-└────└── router.py                              项目路由集
+│    ├── cache                                  缓存层
+│    │    ├── base                           	缓存工具集
+│    │    └── redis                          	redis工具集
+│    ├── common                                 通用工具层
+│    │    ├── async_base                        异步工具集
+│    │    ├── base                              通用工具集
+│    │    ├── error                             异常工具集
+│    │    ├── metaclass                         元类工具集
+│    │    ├── process                          	进程类工具集
+│    │    ├── struct                          	结构类工具集
+│    │    └── task                          	任务类工具集	
+│    ├── database                               数据库层
+│    │    ├── mongo                           	mongo工具集
+│    │    └── mysql                          	mysql工具集
+│    ├── enum                                   枚举层
+│    │    └── base_enum                         枚举类工具集
+│    ├── event                                  事件层目录
+│    │    ├── async_event                       异步事件工具集
+│    │    └── event                          	同步事件工具集
+│    ├── frame                                  框架层
+│    │    ├── fastapi                          	fastapi工具集
+│    │    │    ├── base                         基础工具集
+│    │    │    └── response                     响应工具集
+│    │    └── logging                           日志工具类
+│    ├── net                                    网络层
+│    │    ├── cacert                            根证书
+└────└──  └── http                          	http工具集
 ```
