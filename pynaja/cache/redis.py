@@ -4,9 +4,9 @@ from aioredis.util import _NOTSET
 from aioredis.commands.string import StringCommandsMixin
 from aioredis.commands.transaction import Pipeline, MultiExec
 
-from naja.common.async_base import Utils, AsyncContextManager, AsyncCirculator
-from naja.common.base import WeakContextVar
-from naja.event.async_event import DistributedEvent
+from pynaja.common.async_base import Utils, AsyncContextManager, AsyncCirculator
+from pynaja.common.base import WeakContextVar
+from pynaja.event.async_event import DistributedEvent
 
 REDIS_ERROR_RETRY_COUNT = 0x1f
 REDIS_POOL_WATER_LEVEL_WARNING_LINE = 0x08

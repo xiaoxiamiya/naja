@@ -1,4 +1,4 @@
-# naja
+# pynaja
 
 # 快速开始
 
@@ -8,13 +8,13 @@ git clone https://github.com/xiaoxiamiya/naja.git
 
 
 ## 安装
-pip install naja
+pip install pynaja
 
 
 ## 项目层级结构
 
 ```tex
-├── naja                                        项目目录
+├── pynaja                                      项目目录
 │    ├── cache                                  缓存层
 │    │    ├── base                           	缓存工具集
 │    │    └── redis                          	redis工具集

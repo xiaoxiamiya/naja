@@ -1,4 +1,4 @@
-from naja.common.metaclass import Singleton
+from pynaja.common.metaclass import Singleton
 
 
 class Enum:

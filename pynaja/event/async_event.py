@@ -1,5 +1,5 @@
-from naja.common.async_base import Utils, AsyncCirculatorForSecond, FutureWithTimeout, FuncWrapper
-from naja.event.event import EventDispatcher as _EventDispatcher
+from pynaja.common.async_base import Utils, AsyncCirculatorForSecond, FutureWithTimeout, FuncWrapper
+from pynaja.event.event import EventDispatcher as _EventDispatcher
 
 
 class EventDispatcher(_EventDispatcher):

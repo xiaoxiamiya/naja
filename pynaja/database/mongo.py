@@ -1,6 +1,6 @@
 from motor.motor_asyncio import AsyncIOMotorClient
 
-from naja.common.async_base import Utils
+from pynaja.common.async_base import Utils
 
 
 MONGO_POLL_WATER_LEVEL_WARNING_LINE = 0x08

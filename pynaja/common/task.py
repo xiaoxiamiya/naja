@@ -3,7 +3,7 @@ import pytz
 from apscheduler.schedulers.asyncio import AsyncIOScheduler
 from apscheduler.triggers.cron import CronTrigger
 
-from naja.common.async_base import Utils
+from pynaja.common.async_base import Utils
 
 TIMEZONE = pytz.timezone(r'Asia/Shanghai')
 
