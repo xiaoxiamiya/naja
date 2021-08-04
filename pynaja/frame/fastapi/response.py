@@ -2,8 +2,8 @@
 
 from fastapi.responses import UJSONResponse
 
-from naja.common.struct import Result, Const
-from naja.enum.base_enum import Enum
+from pynaja.common.struct import Result, Const
+from pynaja.enum.base_enum import Enum
 
 
 class RespCode(Enum):

@@ -1,5 +1,5 @@
-from naja.common.async_base import Utils
-from naja.common.base import FuncWrapper
+from pynaja.common.async_base import Utils
+from pynaja.common.base import FuncWrapper
 
 
 class EventDispatcher:

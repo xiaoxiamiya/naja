@@ -7,7 +7,7 @@ from datetime import timedelta
 
 from loguru._file_sink import FileSink
 
-from naja.common.async_base import Utils
+from pynaja.common.async_base import Utils
 
 
 class LogFileRotator:

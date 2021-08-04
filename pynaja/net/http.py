@@ -4,7 +4,7 @@ from contextlib import contextmanager
 
 import aiohttp
 
-from naja.common.async_base import AsyncCirculatorForSecond, Utils
+from pynaja.common.async_base import AsyncCirculatorForSecond, Utils
 
 DEFAULT_TIMEOUT = aiohttp.client.ClientTimeout(total=60, connect=10, sock_read=60, sock_connect=10)
 DOWNLOAD_TIMEOUT = aiohttp.client.ClientTimeout(total=600, connect=10, sock_read=600, sock_connect=10)

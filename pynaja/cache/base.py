@@ -2,7 +2,7 @@ import asyncio
 
 from cachetools import TTLCache
 
-from naja.common.async_base import Utils
+from pynaja.common.async_base import Utils
 
 
 class StackCache:

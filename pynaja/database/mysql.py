@@ -7,9 +7,9 @@ from sqlalchemy.sql.selectable import Select
 from sqlalchemy.sql.dml import Insert, Update, Delete
 from pymysql.err import Warning, DataError, IntegrityError, ProgrammingError
 
-from naja.common.async_base import Utils, AsyncContextManager, AsyncCirculator
-from naja.common.base import WeakContextVar
-from naja.common.error import MySQLReadOnlyError, MySQLClientDestroyed
+from pynaja.common.async_base import Utils, AsyncContextManager, AsyncCirculator
+from pynaja.common.base import WeakContextVar
+from pynaja.common.error import MySQLReadOnlyError, MySQLClientDestroyed
 
 
 MYSQL_ERROR_RETRY_COUNT = 0x1f
