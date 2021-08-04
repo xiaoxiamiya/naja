@@ -2,8 +2,8 @@ import struct
 from collections import OrderedDict
 from configparser import RawConfigParser
 
-from naja.common.async_base import Utils
-from naja.common.error import ConstError
+from pynaja.common.async_base import Utils
+from pynaja.common.error import ConstError
 
 
 class Result(dict):

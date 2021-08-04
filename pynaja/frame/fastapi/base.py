@@ -6,9 +6,9 @@ import fastapi
 from fastapi import __version__ as fastapi_version
 from fastapi.responses import UJSONResponse
 
-from naja.common.async_base import Utils
-from naja.frame.logging import init_logger, DEFAULT_LOG_FILE_ROTATOR
-from naja.frame.fastapi.response import ErrorResponse
+from pynaja.common.async_base import Utils
+from pynaja.frame.logging import init_logger, DEFAULT_LOG_FILE_ROTATOR
+from pynaja.frame.fastapi.response import ErrorResponse
 
 
 def create_fastapi(

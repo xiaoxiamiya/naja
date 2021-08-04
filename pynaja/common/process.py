@@ -1,9 +1,9 @@
 import os
 from multiprocessing.shared_memory import SharedMemory
 
-from naja.common.async_base import Utils
-from naja.common.base import ContextManager
-from naja.common.struct import ByteArrayAbstract
+from pynaja.common.async_base import Utils
+from pynaja.common.base import ContextManager
+from pynaja.common.struct import ByteArrayAbstract
 
 
 class SharedByteArray(SharedMemory, ByteArrayAbstract, ContextManager):

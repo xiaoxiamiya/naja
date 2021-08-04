@@ -23,7 +23,7 @@ import pytz
 import loguru
 import ujson
 
-from naja.common.metaclass import Singleton
+from pynaja.common.metaclass import Singleton
 
 
 class _Utils(Singleton):

@@ -1,11 +1,11 @@
 from distutils.core import setup
 from setuptools import find_packages
-from naja import __version__
+from pynaja import __version__
 
 with open("README.md", "r") as f:
     long_description = f.read()
 
-setup(name=r'naja',
+setup(name=r'pynaja',
       version=__version__,
       license=r'Apache License Version 2.0',
       author=r'xiami',

@@ -5,7 +5,7 @@ import traceback
 import types
 from contextvars import Context
 
-from naja.common.base import _Utils, Ignore, FuncWrapper as _FuncWrapper
+from pynaja.common.base import _Utils, Ignore, FuncWrapper as _FuncWrapper
 
 
 class Utils(_Utils):
