@@ -37,7 +37,8 @@ setup(name=r'pynaja',
           r'ujson==4.0.2',
           r'pytz==2021.1',
           r'PyMySQL==0.9.3',
-          r'pymongo==3.12.0'
+          r'pymongo==3.12.0',
+          r'uvicorn==0.14.0',
       ],
       classifiers=[
           r'Programming Language :: Python :: 3.8',
