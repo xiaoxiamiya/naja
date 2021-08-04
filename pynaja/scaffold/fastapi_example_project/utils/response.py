@@ -1,9 +1,10 @@
 from pynaja.common.struct import Const, Result
-from pynaja.frame.fastapi.response import RespCode as _RespCode
 from starlette.responses import UJSONResponse
 
 
-class RespCode(_RespCode):
+class RespCode():
+    Success = 0  # 成功
+    Unknown = -1  # 未知
     Database = -2  # 数据库异常
     LackParams = -3  # 缺少必要请求参数
     DataUnExcept = -4  # 异常数据，暂无法操作
