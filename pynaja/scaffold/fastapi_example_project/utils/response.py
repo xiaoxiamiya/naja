@@ -1,6 +1,8 @@
 from pynaja.common.struct import Const, Result
 from starlette.responses import UJSONResponse
 
+from pynaja.frame.fastapi.response import ErrorResponse as _ErrorResponse
+
 
 class RespCode():
     Success = 0  # 成功
@@ -34,16 +36,10 @@ class Response(UJSONResponse):
         return super().render(Result(code=RespCode.Success, data=content, msg=RespMessage[RespCode.Success]))
 
 
-class ErrorResponse(Exception, UJSONResponse):
+class ErrorResponse(_ErrorResponse):
 
     def __init__(self, error_code, content=None, status_code=200, details=None, **kwargs):
-        self._error_code = error_code
-        self._details = details
-
-        Exception.__init__(self)
-        UJSONResponse.__init__(self, content, status_code, **kwargs)
-
-    def render(self, content):
-        return super().render(
-            Result(code=self._error_code, data=content, msg=RespMessage[self._error_code], details=self._details)
+        super().__init__(
+            error_code=error_code, content=content, msg=RespMessage[error_code], status_code=status_code,
+            details=details, **kwargs
         )
